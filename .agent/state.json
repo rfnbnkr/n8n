@@ -1,11 +1,1 @@
-{
-  "active_branch": "feature/button-component",
-  "last_commit": "68b53c5f5f30752c3bbc1e02404b6dc46fc28114",
-  "task": "create textarea",
-  "status": "completed",
-  "test_status": "not_run",
-  "build_status": "not_run",
-  "preview_url": null,
-  "updated_at": "2025-01-15T10:00:00Z",
-  "pending_steps": []
-}
+{"active_branch":"feature/button-component","last_commit":"2606b760f41bae3c39dc7cd9a7164f7a73c33950","task":"create button group","status":"completed","test_status":"not_run","build_status":"not_run","preview_url":null,"updated_at":"2025-01-15T10:30:00Z","pending_steps":[]}
