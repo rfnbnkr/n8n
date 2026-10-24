@@ -1,7 +1,7 @@
 {
   "active_branch": "feature/button-component",
-  "last_commit": "c77c62b89a49519533dad703098458fc404d422b",
-  "task": "please create button component into folder src/component",
+  "last_commit": "68b53c5f5f30752c3bbc1e02404b6dc46fc28114",
+  "task": "create textarea",
   "status": "completed",
   "test_status": "not_run",
   "build_status": "not_run",
