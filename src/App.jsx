@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Button from './components/Button.jsx'
+import ButtonGroup from './components/ButtonGroup.jsx'
 import Textarea from './components/Textarea.jsx'
 
 function App() {
@@ -10,18 +11,35 @@ function App() {
     <div className="App p-4">
       <h1 className="text-2xl font-bold mb-4">Welcome to Vite + React</h1>
       <p className="mb-4">Count is: {count}</p>
-      <Button variant="primary" onClick={() => setCount((c) => c + 1)}>
-        Increment
-      </Button>
-      <Button variant="secondary" onClick={() => setCount(0)} disabled={count === 0}>
-        Reset
-      </Button>
-      <Button variant="danger" onClick={() => alert('Delete clicked')}>
-        Delete
-      </Button>
-      <Button variant="ghost" onClick={() => alert('Link clicked')}>
-        Cancel
-      </Button>
+
+      <div className="mb-4">
+        <ButtonGroup orientation="horizontal">
+          <Button variant="primary" onClick={() => setCount((c) => c + 1)}>
+            Increment
+          </Button>
+          <Button variant="secondary" onClick={() => setCount(0)} disabled={count === 0}>
+            Reset
+          </Button>
+          <Button variant="danger" onClick={() => alert('Delete clicked')}>
+            Delete
+          </Button>
+        </ButtonGroup>
+      </div>
+
+      <div className="mb-4">
+        <ButtonGroup orientation="vertical">
+          <Button variant="primary" onClick={() => alert('Top clicked')}>
+            Top
+          </Button>
+          <Button variant="secondary" onClick={() => alert('Middle clicked')}>
+            Middle
+          </Button>
+          <Button variant="ghost" onClick={() => alert('Bottom clicked')}>
+            Bottom
+          </Button>
+        </ButtonGroup>
+      </div>
+
       <div className="mt-6 space-y-4">
         <label className="block text-sm font-medium mb-1">Primary textarea</label>
         <Textarea
